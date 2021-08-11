@@ -83,6 +83,7 @@ import (
 	"github.com/reexlabs/reex/docs"
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 	reexmodule "github.com/reexlabs/reex/x/reex"
 	reexmodulekeeper "github.com/reexlabs/reex/x/reex/keeper"
@@ -92,7 +93,7 @@ import (
 )
 
 const (
-	AccountAddressPrefix = "cosmos"
+	AccountAddressPrefix = "reex"
 	Name                 = "reex"
 )
 

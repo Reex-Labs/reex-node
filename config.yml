@@ -1,26 +1,26 @@
 accounts:
-  - name: alice
-    coins: ["2000000token"]
-  - name: bob
-    coins: ["1000000token"]
+  - name: dev1
+    coins: ["100000000000000reex"]
+  - name: dev2
+    coins: ["100000000000000reex"]
 validator:
-  name: alice
-  staked: "1000000token"
+  name: dev1
+  staked: "50000000000000reex"
 client:
   vuex:
     path: "vue/src/store"
   openapi:
     path: "docs/static/openapi.yml"
 faucet:
-  name: bob
-  coins: ["5token"]
-  coins_max: ["20token"]
+  name: dev2
+  coins: ["1000000reex"]
+  # coins_max: ["20000000reex"]
 genesis:
   # chain_id: "reex"
   app_state:
     staking:
       params:
-        bond_denom: "token"
+        bond_denom: "reex"
   consensus_params:
     block:
       max_bytes: "150000"
@@ -30,11 +30,11 @@ genesis:
   crisis:
     constant_fee:
       amount: "1000",
-      denom: "token"
+      denom: "reex"
   gov:
     deposit_params:
-      min_deposit: [ {amount: "10000000", denom: "token"} ]
+      min_deposit: [ {amount: "10000000", denom: "reex"} ]
   mint:
     params:
-      mint_denom: "token"
+      mint_denom: "reex"
 
